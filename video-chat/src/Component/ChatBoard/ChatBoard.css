@@ -1,0 +1,368 @@
+
+.viewChatBoard {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    width: 100%;
+    height: 95vh;
+    position: relative;
+    background-image: url('../../images/chat.jpg');
+    background-position: center;
+}
+.viewChatBoard::-webkit-scrollbar {
+    /* padding: 2px 0; */
+    display: none;
+}
+/* .viewChatBoard::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #e8e8e8;
+} */
+.video{
+  width: 40px;
+  margin-left: 3px;
+  text-decoration: none;
+  position: relative;
+}
+.headerChatBoard {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-left: 400px;
+    margin-right: 390px;
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color: #bf830c;
+    opacity: .88;
+    position: fixed;
+}
+
+.textHeaderChatBoard {
+    font-weight: bold;
+    color: #f4f5f9;
+    margin-left: 10px;
+}
+
+.viewListContentChat {
+    display: flex;
+    flex: 1;
+    margin-top:100px;
+    flex-direction: column;
+    overflow-y: auto;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.viewListContentChat::-webkit-scrollbar-track {
+    padding: 2px 0;
+}
+
+.viewListContentChat::-webkit-scrollbar {
+    width: 6px;
+}
+
+.viewListContentChat::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #e8e8e8;
+}
+
+.viewBottom {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+      background-color: rgb(242, 238, 236);
+      opacity: .85;
+      border-radius: 5px;
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      position: static;
+    height: 50px;
+}
+
+.icOpenGallery {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    background-color: rgb(242, 238, 236);
+    /* border-radius: 60%; */
+    opacity: .8;
+}
+
+.viewInputGallery {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+    left: 10px;
+    width: 30px;
+}
+
+.icOpenSticker {
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.viewChatBoard .bgimage{
+  background-image: url('../../images/chat.jpg');
+  background-size: cover;
+  height: inherit;
+  position: sticky;
+  overflow-y: scroll;
+}
+.icSend {
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.viewAvatarItem{
+   height: 50px;
+   border-radius: 50%;
+}
+.viewInput {
+    flex: 1;
+    border-radius: 4px;
+    padding-left: 10px;
+    background-color: rgb(242, 238, 236);
+
+    padding-right: 10px;
+    border: 0px;
+    height: 30px;
+}
+
+.viewInput:focus {
+    outline: 0;
+}
+
+input::placeholder {
+    color: rgb(4, 4, 4);
+}
+
+/* View item message */
+
+.viewItemRight {
+    width: 300px;
+    height: auto;
+    background-color: #493d3d;
+    align-self: flex-end;
+    margin-right: 20px;
+    margin-top: 10px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 0px;
+    color: #f5f1f9;
+    text-align: left;
+    opacity: .95;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.viewItemRight2 {
+    width: 300px;
+    height: auto;
+    background-color: #493d3d;
+    align-self: flex-end;
+    margin-right: 20px;
+    position: relative;
+    margin-top: 10px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 0px;
+    color: #f5f1f9;
+    text-align: left;
+}
+
+.viewItemRight3 {
+    width: 300px;
+    height: auto;
+    align-self: flex-end;
+    position: relative;
+    margin-right: 20px;
+    margin-top: 10px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 0px;
+    text-align: left;
+}
+
+.viewWrapItemLeft {
+    width: 300px;
+    text-align: left;
+    align-self: flex-start;
+    margin-left: 20px;
+    margin-top: 10px;
+    opacity: 1;
+    position: relative;
+    height: auto;
+    margin-bottom: -15px;
+}
+
+.viewWrapItemLeft2 {
+    width: 300px;
+    align-self: flex-start;
+    text-align: left;
+    height: auto;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: -15px;
+}
+
+.viewWrapItemLeft3 {
+    flex-direction: row;
+    display: flex;
+    width: 340px;
+    height: auto;
+    margin-bottom: -15px;
+}
+
+.viewItemLeft {
+    width: 300px;
+    height: auto;
+    background-color: #5b6579;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 8px;
+    opacity: .95;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+}
+
+.viewItemLeft2 {
+    width: 300px;
+    height: auto;
+    background-color: #5b6579;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 8px;
+    color: white;
+}
+
+.viewItemLeft3 {
+    width: 300px;
+    height: auto;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 8px;
+    color: white;
+}
+
+.peerAvatarLeft {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    object-fit: cover;
+    align-self: flex-end;
+}
+
+.viewPaddingLeft {
+    width: 40px;
+}
+
+/* Item text */
+
+.textContentItem {
+    font-size: 14px;
+    /* word-break: break-word; */
+    white-space: pre-wrap;
+}
+
+.viewListContentChat div:last-child {
+    margin-bottom: 10px;
+}
+
+/* Item image */
+
+.imgItemRight {
+    object-fit: cover;
+    width: 300px;
+    height: 300px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 0px;
+}
+
+.imgItemLeft {
+    object-fit: cover;
+    width: 300px;
+    height: 300px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 8px;
+}
+.textTimeright {
+    color: #808888;
+    font-size: 12px;
+    font-style: italic;
+    /* margin-left:0px; */
+}
+
+.textTimeLeft {
+    color: #000001;
+    opacity:1;
+    font-size: 12px;
+    font-style: italic;
+    margin-left: 40px;
+    background-color: #5b6579;
+}
+
+/* Stickers */
+
+.viewStickers {
+    display: flex;
+    border-top: 1px solid #e8e8e8;
+    height: 100px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.imgSticker {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+/* Say hi */
+
+.viewWrapSayHi {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    opacity: .9;
+    margin-left: 400px;
+    margin-right: 500px;
+    border-radius: 20px;
+}
+
+.textSayHi {
+    color: #808888;
+    font-size: 14px;
+}
+
+.imgWaveHand {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+}

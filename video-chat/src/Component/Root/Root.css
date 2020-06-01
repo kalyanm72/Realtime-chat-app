@@ -1,0 +1,14 @@
+button:active {
+    opacity: 0.5;
+}
+
+button:focus {
+    outline: 0;
+}
+.fullwidth{
+  height: 100vh;
+  width: 100%;
+}
+img:active {
+    opacity: 0.5;
+}

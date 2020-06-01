@@ -1,0 +1,392 @@
+.root {
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+    border: none;
+    /* height: 100vh; */
+    /* margin: 0; */
+    /* background-image: url('../../images/welcome.jpeg'); */
+}
+
+.header {
+    font-weight: bold;
+    font-size: 20px;
+    color: #feb868;
+    text-align: center;
+    background-color: #30302c;
+    padding: 20px;
+    overflow: hidden;
+    text-shadow: 0 0 7px rgb(238, 14, 30);
+    border: none;
+    height: 4.3vh;
+    margin: 0;
+    border-bottom: 3px solid white;
+    box-shadow: 0 4px 4px #808888;
+    flex-direction: row;
+}
+
+.body {
+    display: flex;
+    flex-direction: row;
+    /* padding-top: 5px; */
+    border: none;
+    height: 90vh;
+}
+
+.viewLoading {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icLogout {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    right: 0;
+    margin-right: 30px;
+    cursor: pointer;
+    color: inherit;
+      transition:  0.3s ease-in-out;
+}
+.icLogout:hover{
+box-shadow: 0 0 4px 4px rgb(232, 128, 8);
+}
+.icProfile {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    right: 0;
+    margin-right: 80px;
+      transition:  0.3s ease-in-out;
+    cursor: pointer;
+}
+.icProfile:hover{
+  box-shadow: 0 0 4px 4px rgb(232, 128, 8);
+}
+
+/* Dialog confirm */
+
+.viewCoverScreen {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.viewWrapTextDialogConfirmLogout {
+    width: 300px;
+    height: 50px;
+    background-color: #171615;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.titleDialogConfirmLogout {
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.viewWrapButtonDialogConfirmLogout {
+    flex-direction: row;
+    height: 100px;
+    width: 300px;
+    min-width: 300px;
+    background-color: #feb868;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.rechat{
+  margin-left: 200px;
+}
+.btnYes {
+    width: 100px;
+    height: 40px;
+    font-weight: bold;
+    margin-right: 20px;
+    background-color: #dd4b39;
+    border: 0px;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btnNo {
+    width: 100px;
+    height: 40px;
+    font-weight: bold;
+    margin-left: 20px;
+    padding: 5px;
+    background-color: #dd4b39;
+    border: 0px;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* List user */
+
+.viewListUser {
+    overflow-y: scroll;
+    height: 90vh;
+    margin: 0;
+    /* box-sizing: border-box; */
+    padding: 0;
+    background-image: url('../../images/welcome.jpg.jpg');
+    opacity: .95;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+}
+
+.viewListUser::-webkit-scrollbar {
+    width: 6px;
+}
+
+.viewListUser::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #203152;
+}
+
+.viewWrapItem {
+    display: flex;
+    flex-direction: row;
+    background-color:rgb(11, 194, 222);
+    color: rgb(243, 226, 244);
+    width: 330px;
+    margin-top: 10px;
+    border-radius: 20px;
+    border-right: -5px;
+    opacity: .95;
+    margin-left: 10px;
+    border: none;
+    align-items: center;
+    transition: all 0.5s;
+    justify-content: center;
+}
+.viewWrapItem:hover{
+    box-shadow: 0 4px 4px #87a6a6;
+    background: rgb(71, 71, 64);
+    border-radius: 20px;
+    color: white;
+    border-right: -5px;
+    opacity: inherit;
+}
+.viewWrapItem:hover div:last-child{
+  color: white;
+}
+.viewWrapItemFocused {
+    border: none;
+    display: flex;
+    border-radius: 20px;
+    border-right: -5px;
+    color: white;
+    opacity: inherit;
+    flex-direction: row;
+    background: rgb(71, 71, 64);
+    width: 330px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    align-items: center;
+    justify-content: center;
+      box-shadow: 0 4px 4px #87a6a6;
+}
+.viewWrapItemFocused div:last-child{
+  color: white;
+}
+.viewAvatarItem {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    object-fit: cover;
+    background: inherit;
+}
+
+.viewWrapContentItem {
+    flex-direction: column;
+    display: flex;
+    /* flex: 1; */
+    margin-left: 15px;
+    color: rgb(152, 49, 6);
+    background: inherit;
+    word-wrap: break-word;
+}
+.viewWrapContentItem:hover{
+  color: white;
+}
+.viewWrapContentItem:active{
+  color: white;
+}
+@import url('https://fonts.googleapis.com/css?family=Inconsolata:700');
+
+.container {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 300px;
+  height: 100px;
+  .search {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    background: crimson;
+    border-radius: 50%;
+    transition: all 1s;
+    z-index: 4;
+    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.4);
+    &:hover {
+      cursor: pointer;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      margin: auto;
+      top: 22px;
+      right: 0;
+      bottom: 0;
+      left: 22px;
+      width: 12px;
+      height: 2px;
+      background: white;
+      transform: rotate(45deg);
+      transition: all .5s;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      margin: auto;
+      top: -5px;
+      right: 0;
+      bottom: 0;
+      left: -5px;
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      border: 2px solid white;
+      transition: all .5s;
+    }
+  }
+}
+.container .input {
+  font-family: 'Inconsolata', monospace;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  outline: none;
+  border: none;
+  background: crimson;
+  color: white;
+  text-shadow: 0 0 10px crimson;
+  padding: 0 80px 0 20px;
+  border-radius: 30px;
+  box-shadow: 0 0 25px 0 crimson,
+              0 20px 25px 0 rgba(0, 0, 0, 0.2);
+  transition: all 1s;
+  opacity: 0;
+  z-index: 5;
+  font-weight: bolder;
+  letter-spacing: 0.1em;
+  &:hover {
+    cursor: pointer;
+  }
+  &:focus {
+    width: 300px;
+    opacity: 1;
+    cursor: text;
+  }
+  &:focus ~ .search {
+    right: -250px;
+    background: #151515;
+    z-index: 6;
+    &::before {
+      top: 0;
+      left: 0;
+      width: 25px;
+    }
+    &::after {
+      top: 0;
+      left: 0;
+      width: 25px;
+      height: 2px;
+      border: none;
+      background: white;
+      border-radius: 0%;
+      transform: rotate(-45deg);
+    }
+  }
+  &::placeholder {
+    color: white;
+    opacity: 0.5;
+    font-weight: bolder;
+  }
+}
+
+.textItem {
+    display: inline-block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 240px;
+    /* margin-left: 20px; */
+    color: inherit;
+    text-align: left;
+    font-size: 14px;
+}
+
+.ishidden{
+  display: none;
+}
+.notification-dot{
+  height: 7px;
+  width: 7px;
+  margin-left: 10px;
+  text-align: right;
+  background-color: rgb(223, 27, 15);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.viewBoard {
+    display: flex;
+    flex: 1;
+    margin: 0;
+    width: 100%;
+    padding: 0;
+    height: 90vh;
+    overflow-y: scroll;
+}
+.viewBoard::-webkit-scrollbar{
+    display: none;
+}

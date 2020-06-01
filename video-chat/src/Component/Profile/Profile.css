@@ -1,0 +1,147 @@
+.root {
+    flex-direction: column;
+    overflow: hidden;
+    background-image: url('../../images/profile.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.viewLoading {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rechat{
+  margin-left: 100px;
+}
+.header {
+  font-weight: bold;
+  font-size: 20px;
+  color: #feb868;
+  text-align: center;
+  background-color: #30302c;
+  padding: 20px;
+  overflow: hidden;
+  text-shadow: 0 0 7px rgb(238, 14, 30);
+  border: none;
+  height: 5vh;
+  margin: 0;
+  border-bottom: 3px solid white;
+  box-shadow: 0 4px 4px #808888;
+  flex-direction: row;
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+    align-self: center;
+    margin-top: 50px;
+    margin-left: 250px;
+      transition: all 0.5s;
+    object-fit: cover;
+}
+.wrapper{
+  align-items: center;
+  opacity: 1;
+}
+.avatar:hover{
+  box-shadow: 0 0 4px 4px rgb(12, 19, 2);
+  background: rgb(71, 71, 64);
+}
+.wrap{
+  /* background-color: rgb(6, 160, 185); */
+  margin-left: 500px;
+  margin-right: 500px;
+  margin-top: 100px;
+}
+.textLabel {
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    font-style: italic;
+    font-size: 18px;
+    margin-top: 150px;
+    margin-left: 275px;
+    /* background-color: rgb(147, 74, 3); */
+}
+
+.textInput {
+    width: 500px;
+    align-self: center;
+    border: none;
+    background-color: #203152;
+    border-radius: 3px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+.textInput:active{
+  box-shadow: 0 0 4px black;
+}
+
+.btnUpdate {
+    background-color: rgb(240, 130, 11);
+    border: none;
+    color: #10f91c;
+    background-color: #203152;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    font-size: 20px;
+    align-self: center;
+    border-radius: 8px;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-left: 225px;
+    /* margin-right: 300px; */
+    cursor: pointer;
+    /* margin-left: 500px; */
+}
+
+.viewWrapInputFile {
+    position: absolute;
+    align-self: center;
+    top: 215px;
+    background-color: rgba(1, 1, 1, 0.5);
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    display: flex;
+    transition: all 0.5s;
+    margin-left: 200px;
+    align-items: center;
+    justify-content: center;
+}
+.viewWrapInputFile{
+  box-shadow: 0 0 4px black;
+}
+.viewInputFile {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 0px;
+    outline: 0;
+    z-index: -1;
+    opacity: 0;
+}
+
+.imgInputFile {
+    border: none;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    margin-left: -5px;
+    margin-bottom: 1px;
+}

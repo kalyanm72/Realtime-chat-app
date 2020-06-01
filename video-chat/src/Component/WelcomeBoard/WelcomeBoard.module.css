@@ -1,0 +1,44 @@
+/* Welcome board */
+.viewWelcomeBoard {
+    display: flex;
+    flex: 1;
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../../images/welcome.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: auto;
+}
+
+.textTitleWelcome {
+    font-size: 22px;
+    font-weight: bold;
+    color: #faf7f4;
+    margin-bottom: 50px;
+
+}
+
+.textDesciptionWelcome {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 50px;
+      /* margin-bottom: 200px; */
+      overflow: hidden;
+    color: #f9f8f5;
+}
+
+
+.avatarWelcome {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    /* margin-top: 200px; */
+    object-fit: cover;
+    overflow: hidden;
+      transition:  0.3s ease-in-out;
+}
+.avatarWelcome:hover{
+  box-shadow: 0 0 7px 7px rgb(255, 255, 255);
+}
