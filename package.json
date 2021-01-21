@@ -9,7 +9,7 @@
     "env": "0.0.2",
     "express": "^4.17.1",
     "moment": "^2.26.0",
-    "socket.io": "^2.3.0"
+    "socket.io": "^2.4.0"
   },
   "scripts": {
     "start": "NODE_ENV=production & node server.js",
